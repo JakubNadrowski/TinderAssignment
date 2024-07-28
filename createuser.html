@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <img src="./assets/img/log.png" class="logo" alt="logohere">
+    </div>
+    <h2>•CREATE USER•</h2>
+        <div class="form">
+            <div class="main">
+            <form class="js-form" action ="addUser.php" method="post">
+                <label for="name">First name</label>
+                <br>
+                <input type="text" name ="fname" required pattern="[A-Za-z]+">
+                <br>
+                <label for="lname">Last name</label>
+                <br>
+                <input type="text" name="lname" required pattern="[A-Za-z]+">
+                <br>
+                <label for="DoB">Birthday</label>
+                <br>
+                <input type="date" name="DoB" required>
+                <br>
+                <label for="gender">Gender</label><br>
+                <select name="gender" id="js-gender" required>
+                    <option value=""></option> 
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                <br>
+                <label for="Pgender">Preffered gender</label><br>
+                <select name="Pgender" id="js-Pgender" required>
+                    <option value=""></option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" id="js-password" name="password" required>
+                <br>
+                <input type="submit" value="CREATE AN ACCOUNT" class="btn">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

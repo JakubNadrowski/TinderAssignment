@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <img src="./assets/img/log.png" class="logo" alt="logohere">
+    </div>
+    <h2>•Hello, who are you?•</h2>
+    <br>
+    <div class="main">
+        <form class="js-form" action ="swipe.php" method="post">
+            <label for="name">First name</label>
+            <br>
+            <input type="text" id="js-fname" name ="fname" required pattern="[A-Za-z]+">
+            <br>
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="js-gender" required>
+                <option value=""></option> 
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+            <br>
+            <label for="Pgender">Preffered gender</label><br>
+            <select name="Pgender" id="js-Pgender" required>
+                <option value=""></option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Get Swiping" class="btn2">
+        </form>
+    </div>
+            
+</body>
+</html>
